@@ -8,7 +8,7 @@ int main()
 {
     vector<char> inputVector;
     string input;
-    while (1)
+    while(1)
     {
         cin >> input;
         if (input == "#")
