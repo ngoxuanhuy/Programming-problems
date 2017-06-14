@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-void Print (vector<int> arr, int n)
+void Printing (vector<int> arr, int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -40,5 +40,5 @@ int main()
             }
         }
     }
-    Print (arr,n);
+    Printing (arr,n);
 }
