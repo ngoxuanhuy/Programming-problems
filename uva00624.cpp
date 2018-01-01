@@ -25,20 +25,20 @@ void Choose(int currentTotal, int currentBitmask, int currentIndex)
 
 int main()
 {
-	while (scanf_s("%d %d", &n, &numOfTracks) != EOF)
+	while (scanf("%d %d", &n, &numOfTracks) != EOF)
 	{
 		for (i = 0; i < numOfTracks; i++)
 		{
-			scanf_s("%d", &trackLength[i]);
+			scanf("%d", &trackLength[i]);
 		}
 		total = -1, bitmask = -1;
 		Choose(0, 0, 0);
 
 		for (i = 0; i < numOfTracks; i++) {
 			if ((bitmask >> i) % 2)
-				printf_s("%d ", trackLength[i]);
+				printf("%d ", trackLength[i]);
 		}
-		printf_s("sum:%d\n", total);
+		printf("sum:%d\n", total);
 	}
 	return 0;
 }
